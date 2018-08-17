@@ -1,0 +1,75 @@
+{
+  "name": "sean-groff-blog",
+  "description": "Sean Groff Blog Site",
+  "version": "1.0.0",
+  "author": "Sean Groff <sgroff04@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/seangroff/sean-groff-gatsby-v2/issues"
+  },
+  "dependencies": {
+    "emotion": "^9.2.6",
+    "emotion-server": "^9.2.6",
+    "gatsby": "next",
+    "gatsby-plugin-emotion": "^1.1.17",
+    "gatsby-plugin-feed": "next",
+    "gatsby-plugin-google-analytics": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-plugin-typography": "next",
+    "gatsby-remark-copy-linked-files": "next",
+    "gatsby-remark-images": "next",
+    "gatsby-remark-prismjs": "next",
+    "gatsby-remark-responsive-iframe": "next",
+    "gatsby-remark-smartypants": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
+    "lodash": "^4.17.5",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.6",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.0.5",
+    "react-lazy-load": "^3.0.13",
+    "react-typography": "^0.16.13",
+    "typeface-merriweather": "0.0.43",
+    "typeface-montserrat": "0.0.43",
+    "typography": "^0.16.17",
+    "typography-theme-wordpress-2016": "^0.15.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.3.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "gatsby-plugin-babel": "^1.0.0",
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.12.0"
+  },
+  "homepage": "https://github.com/seangroff/sean-groff-gatsby-v2#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seangroff/sean-groff-gatsby-v2.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "eslint --fix --ignore-path .gitignore 'src/**/*.js' && prettier --write 'src/**/*.js' 'src/**/*.md'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  }
+}
