@@ -1,9 +1,12 @@
 import React from 'react'
-import Icon from './Icon'
-import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
+import { FaLinkedin } from 'react-icons/fa'
 
-export default (props: {}) => (
-  <Icon href="https://www.linkedin.com/in/sgroff" target="_blank">
-    <FaLinkedinSquare size={25} />
-  </Icon>
-)
+import Icon from './Icon'
+
+export default function LinkedinIcon() {
+  return (
+    <Icon href="https://www.linkedin.com/in/sgroff" target="_blank">
+      <FaLinkedin size={25} />
+    </Icon>
+  )
+}

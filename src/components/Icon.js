@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'react-emotion'
+
 import Colors from '../utils/Colors'
 
 const { lightText, hoverText } = Colors
 
-const Icon = styled.a`
+const StyledIcon = styled.a`
   color: ${lightText};
   padding: 0 10px;
+  text-decoration: none;
   transition: color 0.2s linear;
 
   &:hover {
@@ -16,8 +18,10 @@ const Icon = styled.a`
   }
 `
 
-export default (props: { children: any }) => (
-  <Icon {...props} rel="noopener">
-    {props.children}
-  </Icon>
-)
+export default function Icon(props) {
+  return (
+    <StyledIcon {...props} rel="noopener">
+      {props.children}
+    </StyledIcon>
+  )
+}

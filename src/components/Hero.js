@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+
 import NavBar from '../components/NavBar'
 import Me from '../components/Me'
 import hero from '../assets/hero1.jpg'
@@ -16,7 +17,7 @@ const HeroImage = styled.header`
   overflow-x: hidden;
 `
 
-const Hero = (props: {}) => {
+export default function Hero() {
   return (
     <HeroImage>
       <NavBar />
@@ -24,5 +25,3 @@ const Hero = (props: {}) => {
     </HeroImage>
   )
 }
-
-export default Hero

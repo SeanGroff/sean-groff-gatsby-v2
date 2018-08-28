@@ -1,5 +1,5 @@
 import React from 'react'
-import FaCodepen from 'react-icons/lib/fa/codepen'
+import { FaCodepen } from 'react-icons/fa'
 
 import Icon from './Icon'
 

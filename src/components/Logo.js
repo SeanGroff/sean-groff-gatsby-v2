@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+
 import Colors from '../utils/Colors'
 
 const { lightText, hoverText } = Colors
@@ -20,10 +21,10 @@ const MyLogo = styled.a`
   }
 `
 
-const Logo = (props: { children: string }) => (
-  <MyLogo {...props} href="#me" rel="noopener">
-    {props.children}
-  </MyLogo>
-)
-
-export default Logo
+export default function Logo(props) {
+  return (
+    <MyLogo {...props} href="#me" rel="noopener">
+      {props.children}
+    </MyLogo>
+  )
+}

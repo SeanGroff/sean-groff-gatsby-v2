@@ -12,7 +12,7 @@ import '../fonts/LoraRegular.css'
 const { bgColorDark, lightText, transparentDarkBlue } = Colors
 const { smallUp, mediumUp, largeUp } = MediaQueries
 
-const Portfolio = styled.section`
+const StyledPortfolio = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,20 +152,12 @@ const Project = styled.a`
   }
 `
 
-export default (props: {}) => (
-  <Portfolio id="portfolio">
-    <Heading primary>{'Portfolio'}</Heading>
-    <Wrapper>
-      {Projects.map(
-        (
-          project: {
-            title: string,
-            description: string,
-            href: string,
-            image: string,
-          },
-          index: number
-        ) => (
+export default function Portfolio(props) {
+  return (
+    <StyledPortfolio id="portfolio">
+      <Heading primary>{'Portfolio'}</Heading>
+      <Wrapper>
+        {Projects.map((project, index) => (
           <ProjectWrapper key={index}>
             <Project {...props} href={project.href} target="_blank" rel="noopener">
               <LazyLoad height={200} offset={400}>
@@ -177,8 +169,8 @@ export default (props: {}) => (
               </Overlay>
             </Project>
           </ProjectWrapper>
-        )
-      )}
-    </Wrapper>
-  </Portfolio>
-)
+        ))}
+      </Wrapper>
+    </StyledPortfolio>
+  )
+}

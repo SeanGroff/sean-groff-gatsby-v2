@@ -1,12 +1,12 @@
 import React from 'react'
-import FaGithubSquare from 'react-icons/lib/fa/github-square'
+import { FaGithub } from 'react-icons/fa'
 
 import Icon from './Icon'
 
 export default function GithubIcon() {
   return (
     <Icon href="https://www.github.com/SeanGroff">
-      <FaGithubSquare size={25} />
+      <FaGithub size={25} />
     </Icon>
   )
 }

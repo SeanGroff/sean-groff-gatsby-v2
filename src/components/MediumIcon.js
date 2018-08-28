@@ -1,9 +1,12 @@
 import React from 'react'
-import Icon from './Icon'
-import FaMedium from 'react-icons/lib/fa/medium'
+import { FaMedium } from 'react-icons/fa/'
 
-export default (props: {}) => (
-  <Icon href="https://www.medium.com/@sgroff04" target="_blank">
-    <FaMedium size={25} />
-  </Icon>
-)
+import Icon from './Icon'
+
+export default function MediumIcon() {
+  return (
+    <Icon href="https://www.medium.com/@sgroff04" target="_blank">
+      <FaMedium size={25} />
+    </Icon>
+  )
+}

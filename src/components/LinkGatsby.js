@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-
+import { Link } from 'gatsby'
 import MediaQueries from '../utils/MediaQueries'
 import Colors from '../utils/Colors'
 import '../fonts/OpenSansLight.css'
@@ -8,7 +8,7 @@ import '../fonts/OpenSansLight.css'
 const { mediumUp } = MediaQueries
 const { lightText, hoverText } = Colors
 
-const StyledAchorTag = styled.a`
+const StyledLink = styled(Link)`
   display: none;
   ${mediumUp} {
     display: inline-block;
@@ -29,10 +29,10 @@ const StyledAchorTag = styled.a`
   }
 `
 
-export default function StyledLink(props) {
+export default function GatsbyLink({ children, ...rest }) {
   return (
-    <StyledAchorTag {...props} rel="noopener">
-      {props.children}
-    </StyledAchorTag>
+    <StyledLink {...rest} rel="noopener">
+      {children}
+    </StyledLink>
   )
 }

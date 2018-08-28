@@ -3,6 +3,7 @@ import styled from 'react-emotion'
 import HamburgerMenu from './HamburgerMenu'
 import Logo from './Logo'
 import StyledLink from './StyledLink'
+import LinkGatsby from './LinkGatsby'
 import MediaQueries from '../utils/MediaQueries'
 import Colors from '../utils/Colors'
 import '../fonts/OpenSansRegular.css'
@@ -39,21 +40,19 @@ const RightColumn = styled.div`
   position: relative;
 `
 
-const NavBar = (props: {}) => (
-  <Wrapper>
-    <LeftColumn>
-      <Logo>{'SG'}</Logo>
-    </LeftColumn>
-    <RightColumn>
-      <StyledLink href="#about">{'about'}</StyledLink>
-      <StyledLink href="#portfolio">{'portfolio'}</StyledLink>
-      {/* <StyledLink href="#resume">
-        {'resume'}
-      </StyledLink> */}
-      <StyledLink href="#contact">{'contact me'}</StyledLink>
-      <HamburgerMenu />
-    </RightColumn>
-  </Wrapper>
-)
-
-export default NavBar
+export default function NavBar() {
+  return (
+    <Wrapper>
+      <LeftColumn>
+        <Logo>{'SG'}</Logo>
+      </LeftColumn>
+      <RightColumn>
+        <StyledLink href="#about">{'about'}</StyledLink>
+        <StyledLink href="#portfolio">{'portfolio'}</StyledLink>
+        <StyledLink href="#contact">{'contact me'}</StyledLink>
+        <LinkGatsby to="/blog">{'blog'}</LinkGatsby>
+        <HamburgerMenu />
+      </RightColumn>
+    </Wrapper>
+  )
+}

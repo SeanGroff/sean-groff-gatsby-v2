@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+
 import SocialIcons from './SocialIcons'
 import profilePic from '../assets/profilePic.jpg'
 import MediaQueries from '../utils/MediaQueries'
@@ -59,7 +60,7 @@ const Occupation = styled.h3`
   }
 `
 
-const Me = (props: {}) => {
+export default function Me() {
   return (
     <Wrapper id="me">
       <ProfilePic />
@@ -69,5 +70,3 @@ const Me = (props: {}) => {
     </Wrapper>
   )
 }
-
-export default Me

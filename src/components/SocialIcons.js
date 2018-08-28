@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+
 import TwitterIcon from './TwitterIcon'
 import LinkedinIcon from './LinkedinIcon'
 import GithubIcon from './GithubIcon'
@@ -13,14 +14,14 @@ const IconsWrapper = styled.div`
   align-items: center;
 `
 
-const SocialIcons = (props: {}) => (
-  <IconsWrapper>
-    <TwitterIcon />
-    <LinkedinIcon />
-    <GithubIcon />
-    <MediumIcon />
-    <CodepenIcon />
-  </IconsWrapper>
-)
-
-export default SocialIcons
+export default function SocialIcons() {
+  return (
+    <IconsWrapper>
+      <TwitterIcon />
+      <LinkedinIcon />
+      <GithubIcon />
+      <MediumIcon />
+      <CodepenIcon />
+    </IconsWrapper>
+  )
+}
