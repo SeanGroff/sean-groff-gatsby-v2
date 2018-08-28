@@ -14,7 +14,7 @@ const HeroImage = styled.header`
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 `
 
 export default function Hero() {

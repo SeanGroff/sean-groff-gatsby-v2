@@ -1,9 +1,9 @@
-import fccLeaderboardImg from '../assets/fcc-leaderboard.png';
-import fccMarkdownImg from '../assets/fcc-markdown.png';
-import fccWikiImg from '../assets/wiki-viewer.png';
-import fccPomodoroImg from '../assets/pomodoro.png';
-import eggheadImg from '../assets/egghead.png';
-import fpImg from '../assets/fp.png';
+import fccLeaderboardImg from '../assets/fcc-leaderboard.png'
+import fccMarkdownImg from '../assets/fcc-markdown.png'
+import fccWikiImg from '../assets/wiki-viewer.png'
+import fccPomodoroImg from '../assets/pomodoro.png'
+import eggheadImg from '../assets/egghead.png'
+import fpImg from '../assets/fp.png'
 
 export default [
   {
@@ -28,15 +28,13 @@ export default [
   },
   {
     title: 'FCC Pomodoro Timer',
-    description:
-      'Built with jQuery, take effecient breaks using the Pomodoro Technique',
+    description: 'Built with jQuery, take effecient breaks using the Pomodoro Technique',
     href: 'https://codepen.io/sgroff04/pen/gaPKBd',
     image: fccPomodoroImg,
   },
   {
     title: 'Egghead a Day',
-    description:
-      'Watch an egghead.io video a day and provide a code example to teach others',
+    description: 'Watch an egghead.io video a day and provide a code example to teach others',
     href: 'https://github.com/SeanGroff/eggheadaday',
     image: eggheadImg,
   },
@@ -47,4 +45,4 @@ export default [
     href: 'https://github.com/SeanGroff/functions-from-scratch',
     image: fpImg,
   },
-];
+]

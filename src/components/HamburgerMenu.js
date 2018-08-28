@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 const Lines = styled.div`
   position: relative;
   padding-right: 15px;
-  width: 30px;
+  width: 15px;
   border-top: 4px solid ${lightText};
 
   &:before {
